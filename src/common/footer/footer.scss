@@ -1,0 +1,38 @@
+@import "../../style/variable";
+.footer-container{
+    background: $dark-bue;
+    color: $white;
+}
+.footer{
+    .logo-img{
+        // width: 60px;
+        width: 120px;
+        aspect-ratio: 5/4 !important;
+    }
+    ul{
+        list-style: none;
+        a{
+            color: $light-green;
+            &:hover{
+            color: $green;
+            }
+        }
+    }
+    .social .icon{
+        width: 40px;
+        aspect-ratio: 1/1;
+        border: 0.05px solid $light-white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: $light-white;
+        &:hover{
+            color: $green;
+            border: 2px solid $green;
+        }
+        svg{
+            font-size: 20px;
+        }
+    }
+}

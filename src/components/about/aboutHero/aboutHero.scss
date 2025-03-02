@@ -1,0 +1,33 @@
+.aboutHero{
+    min-height: 65vh;
+    background: url("/images/about/about-header.webp") no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    @media (max-width:700px) {
+        min-height: 70vh;
+    }
+    @media (max-width:400px) {
+        min-height: 80vh;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: #0a1f2bb6;
+        z-index: 4;
+    }
+    .overlay{
+        display: flex;
+        flex-direction: column;
+        height: inherit;
+        z-index: 8;
+        position: absolute;
+        inset: 0;
+    }
+    @media (max-width:500px) {
+     .ttt{
+         font-size: 50px;
+     }
+     }
+}

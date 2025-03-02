@@ -1,0 +1,58 @@
+@import "../../style/variable";
+
+.join-us{
+    display: flex;
+    height: 80vh;
+    overflow-y: scroll; 
+    scrollbar-width: none;
+    @media (max-width:800px) {
+        display: block;
+        background: url("/public/images/joinus/4135760_2165420-removebg-preview.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @media (max-width:400px) {
+        padding-top: 20px;
+    }
+    .left{
+        background: url("/public/images/joinus/4135760_2165420-removebg-preview.png");
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        image-resolution: 1dppx;
+        background-position: 50%;
+    }
+   .right{
+    width: 100%;
+    @media (max-width:800px) {
+        background: #ffffff8a;
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .field{
+        @media (max-width:400px) {
+            width: 100%;
+        }
+    }
+    input,textarea,select{
+        width: 100%;
+        background: transparent;
+        margin: 10px 0;
+        padding: 10px;
+        color: $dark-bue;
+        outline: $green;
+        border-radius: 5px;
+        box-shadow: none;
+        border: 1px solid $dark-bue;
+        &:focus{
+                outline: 1px solid $green; 
+                border-color: $green; 
+        }
+        
+    }
+   }
+}

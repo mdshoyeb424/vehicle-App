@@ -1,0 +1,19 @@
+@import "@/style/variable";
+.contact-form{
+    input,textarea{
+        width: 100%;
+        background: transparent;
+        margin: 10px 0;
+        padding: 10px;
+        color: $dark-bue;
+        outline: $green;
+        border-radius: 5px;
+        box-shadow: none;
+        border: 1px solid $dark-bue;
+        &:focus{
+                outline: 1px solid $green; 
+                border-color: $green; 
+        }
+        
+    }
+}

@@ -1,0 +1,11 @@
+@import "../../../style/variable";
+
+.accordion-item{
+    border-left: none !important;
+    border-right: none !important;
+}
+.accordion-header button{
+    font-weight: 600 !important;
+    color:  $dark-bue;
+    outline: none;
+}

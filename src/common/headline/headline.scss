@@ -1,0 +1,14 @@
+@import "@/style/variable";
+
+.headline{
+    padding:40px 0 ;
+
+}
+.headline .headline-text::after{
+    content: "";
+    display: flex;
+    width: 70px;
+    height: 5px;
+    background: $dark-bue;
+    margin: 0 auto;
+} 

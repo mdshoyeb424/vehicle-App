@@ -1,0 +1,173 @@
+@import "../../style/variable";
+
+.nav-header {
+    background: $green;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    .company-tag{
+        h4{
+        font-size: 25px;
+        white-space: nowrap;
+        font-weight: bold;
+        @media (max-width:425px) {
+            font-size: 22px;
+        }
+        }
+        small{
+            font-size: 10px;
+            text-align: center;
+            margin: 0 auto;
+            letter-spacing: 2.5px;
+            @media (max-width:425px) {
+                font-size: 8px;
+            }
+        }
+       
+    }
+    .company-tag,.company-tag-upper{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .company-tag-upper{
+        display: none;
+        @media (max-width:953px) {
+            display: block;
+        } 
+        @media (max-width:642px) {
+            display: none;
+        }
+    }
+    .container {
+        @media (max-width:1000px) {
+            max-width: 100% !important;
+            margin: 0 !important;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0 !important;
+
+        li a {
+            color: $white;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .opener {
+            display: none;
+
+            @media (max-width:700px) {
+                display: block;
+            }
+        }
+
+        .toggle-list {
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+
+        .nav-list {
+            @media (max-width:950px) {
+                flex-direction: column;
+                background: $green;
+                width: 200px;
+                position: absolute;
+                height: 100vh;
+                gap: 20px;
+                right: 0;
+                top: 100px;
+                padding: 20px;
+                overflow-y: scroll;
+                scrollbar-width: none;
+                opacity: 0;
+                visibility: hidden;
+                box-shadow: 0px 0px 30px #7f89a140;
+                transition: 0.3s;
+            }
+
+            li {
+                padding: 0 5px;
+
+                .active,
+                a {
+                    padding: 8px 20px;
+                    border-radius: 25px;
+
+                    &.active,
+                    &:hover {
+                        background: $light-green;
+                    }
+                }
+            }
+            .drop-list{
+                position: relative;
+                z-index: 1;
+                color: $white;
+                font-size: 15px;
+                font-weight: 600;
+                text-decoration: none;
+                text-transform: uppercase;
+                cursor: pointer;
+                &:hover ul{
+                    opacity: 1;
+                    visibility: visible;
+                    top: 57px;
+                    padding-left:10px !important ;
+                    @media (max-width:700px) {
+                       top: 50px;
+                    }
+                }
+                .drop{
+                    transform: rotate(0deg);
+                    transition: all 500ms;
+                }
+                &:hover{
+                    .drop{
+                        transform: rotate(180deg);
+                        transition: all 500ms;
+                    }
+                }
+               
+                ul{
+                    display: block;
+                    position: absolute;
+                    width: max-content;
+                    left: 14px;
+                    top: calc(100% + 30px);
+                    margin: 0;
+                    padding: 0px 20px;
+                    z-index: 99;
+                    opacity: 0;
+                    visibility: hidden;
+                    background: $white;
+                    box-shadow: 0px 0px 30px #7f89a140;
+                    transition: 0.3s;
+                    border-radius: 4px;
+                    a{
+                        color: $light-green;
+                       &.active, &:hover{
+                            color:$green !important;
+                            background: none;
+                        }
+                    }
+                    @media (max-width:700px) {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-logo {
+        height: 90px;
+        aspect-ratio: 5/4;
+        @media (max-width:425px) {
+            height: 60px;
+        }
+    }
+}
+.join-btn{
+    transform: translateY(-5px);
+}

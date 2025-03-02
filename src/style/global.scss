@@ -1,0 +1,142 @@
+@import "./variable";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $dark-bue !important;
+  background-color: $white !important;
+  // font-family: $font-default !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  letter-spacing: 0.4px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.hover-green:hover {
+  color: $green;
+}
+
+.bg-green {
+  background: $green;
+  transition: all 0.3s;
+}
+
+.bg-dark-green {
+  background: $green;
+  transition: all 0.3s;
+}
+
+.bg-c-secondary {
+  background: $secondary-color;
+  transition: all 0.3s;
+}
+
+.bg-c-dark {
+  background: $dark-color;
+  transition: all 0.3s;
+}
+
+.hover-secondary:hover {
+  background: $secondary-color;
+  transition: all 0.3s;
+}
+
+@for $i from 10 through 100 {
+  .text-#{$i} {
+    font-size: #{$i}px;
+  }
+
+  .z-index-#{$i} {
+    z-index: #{$i} !important;
+  }
+}
+
+.text-green {
+  color: $green;
+}
+
+.text-light-white {
+  color: $light-white;
+}
+.text-dark-blue{
+  color: $dark-bue;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-light-green{
+  color: $light-green;
+}
+.bg-light-green{
+  background-color: $light-green;
+}
+
+.bg-dark-blue{
+  background: $dark-bue;
+}
+
+
+// ------------------------common css------------------------------------
+
+.text-fill-animation {
+  position: relative;
+  display: inline-block;
+  // font-size: 2rem;
+  font-weight: bold;
+  color: $green  ;
+  overflow: hidden;
+  cursor: pointer;
+
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color:$light-green;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: width 0.5s ease;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+}
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+
+.animation{
+animation: appear linear;
+animation-timeline: view();
+animation-range: entry 0%;
+}
+@keyframes appear {
+  from{
+    opacity: 0;
+    scale: 0;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}

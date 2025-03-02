@@ -1,0 +1,22 @@
+@import "../../../style/variable";
+.overlay{
+position: absolute;
+inset: 0;
+background: #0e253ea9;
+display: flex;
+flex-direction: column;
+.writter-box{
+    @media (max-width:908px) {
+        width: 100% !important;
+    }
+}
+.writter{
+    font-size: 38px;
+    @media (max-width:1000px) {
+        font-size:30px ;
+    }
+    @media (max-width:450px) {
+        font-size: 22px;
+    }
+}
+}

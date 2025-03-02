@@ -1,0 +1,42 @@
+@import "../../../style/variable";
+.get-best-price{
+    z-index: 4;
+    background: $white;
+    border-radius: 0 0  50px 50px ;
+    top: 0px;
+    @media (max-width:908px) {
+        z-index: 4;
+        top: 50%;
+        border-radius: 50px 50px  50px 50px ;
+    }
+    .sell{
+        input,textarea,select{
+            width: 100%;
+            background: transparent;
+            // margin: 10px 0;
+            padding: 10px;
+            color: $dark-bue;
+            outline: $green;
+            border-radius: 0;
+            box-shadow: none;
+            border: none;
+            border-bottom: 1px solid $dark-bue;
+            &:focus{
+                    border-bottom: 2px solid $dark-bue;
+            }
+            
+        }
+        .selector{
+            border-top: 2px solid $green;
+            div{
+                border-top: 3px solid $light-white;
+            }
+            .text-green{
+                border-top: 3px solid $green;
+            }
+            :first-child,:nth-child(2){
+                border-right:1px solid $green ;
+            }
+        }
+    }
+}

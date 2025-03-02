@@ -1,0 +1,17 @@
+.scroll-top-li {
+    position: fixed;
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    bottom: -1rem;
+    right: -1rem;
+    transition: all 0.3s;
+
+    &.top {
+        visibility: visible;
+        opacity: 1;
+        bottom: 1rem;
+        right: 1rem;
+        transition: all 0.3s;
+    }
+}

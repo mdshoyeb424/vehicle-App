@@ -1,0 +1,28 @@
+@import "./variable";
+.btn-green{
+padding: 8px 20px;
+color: $white;
+background: $green;
+border-radius: 5px;
+font-weight: 600;
+border: none;
+transition: all 0.3s;
+&:hover{
+    background: $light-green;
+    transition: all 0.3s;
+}
+}
+.btn-light-green{
+padding: 8px 20px;
+color: $white;
+background: $light-green;
+border-radius: 5px;
+font-weight: 600;
+border: 2px solid transparent   ;
+transition: all 0.3s;
+&:hover{
+    background: $green;
+    transition: all 0.3s;
+    border: 2px solid $light-green;
+}
+}
