@@ -25,7 +25,7 @@ const Navbar = () => {
               className="my-auto d-flex flex-column  fw-bold text-white company-tag cursor-pointer"
             >
               <h4 className="text-30 mb-0">AA1 Scrap Center</h4>
-              <small className="text-center">Scrap Legally, Save Economy</small>
+              <small className="text-center">Scrap Legally, Save economically</small>
             </li>
             <li className="d-flex flex-column w-100">
               <ul className=" d-flex gap-4 justify-content-end pt-1">

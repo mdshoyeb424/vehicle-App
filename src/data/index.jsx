@@ -160,7 +160,7 @@ export const aboutFeatureData = [
   },
 ];
 export const Aboutpara = [
-  " Pradesh Transport Department. Equipped with modern technologies, our facility scrapes End-of-Life Vehicles (ELVs) in a scientifically safe and environmentally-friendly manner, adhering to the guidelines set by the Ministry of Road Transport and Highways (MoRTH), Central Pollution Control Board (CPCB), and the State Transport Department. Our facility has the capacity to process over 50,000 ELVs annually while ensuring environmental safety.",
+  " Pradesh Transport Department. Equipped with modern technologies, our facility Scraps End-of-Life Vehicles (ELVs) in a scientifically safe and environmentally-friendly manner, adhering to the guidelines set by the Ministry of Road Transport and Highways (MoRTH), Central Pollution Control Board (CPCB), and the State Transport Department. Our facility has the capacity to process over 50,000 ELVs annually while ensuring environmental safety.",
 
   "Our vision is to build a state-of-the-art infrastructure that efficiently dismantles and recycles old, unfit vehicles, reducing pollution and safety hazards posed by these vehicles on the road. We are committed to supporting a cleaner and safer environment by offering eco-friendly solutions to vehicle disposal.",
 
@@ -174,6 +174,7 @@ export const company={
   name:"AA1 Scrap Center",
   email: "aa1scrapcenter@gmail.com",
   phone1: "+91 98370 15844",
-  phone2:"+91 9808355126",
+  phone2:"+91 95684 85086",
+  phone3:"+91 79839 92319",
   Address: "Khasra no. 162,163, Bhopa Road, Jat Munjheda Khas, Jatmajhra, Muzaffarnagar, Uttar Pradesh"
 }

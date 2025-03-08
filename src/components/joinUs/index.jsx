@@ -16,8 +16,8 @@ const JoinUs = () => {
     <div className="join-us">
       <div className=" left"></div>
       <div className=" right">
-        <div className="container">
-          <Headline headline="Join Us for long term" />
+        <div className="container pt-4 pt-md-0">
+          <Headline headline="Join Us for long time" />
           <form action="" onSubmit={handleSubmit}>
             <div className="row row-cols-2">
               {formdata.map((val, index) => (

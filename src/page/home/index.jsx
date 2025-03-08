@@ -8,10 +8,12 @@ import CallBack from "../../components/home/callBack";
 import FAQ from "../../components/home/faq";
 import { Helmet } from "react-helmet";
 import { SeoSript } from "../../components/seo/script";
+import TagSlid from "../../components/home/tagSlid";
 
 const Home = () => {
   return (
     <Layout>
+      <TagSlid/>
       <Helmet>
         <title>AA1 Scrap Center - Eco-friendly Vehicle Disposal</title>
         <meta
@@ -28,9 +30,10 @@ const Home = () => {
           content="AA1 Scrap Center - Eco-friendly Vehicle Disposal"
         />
         <meta
-          property="og:description"
-          content="AA1 Scrap Center offers environmentally friendly vehicle scrapping services. We process end-of-life vehicles and support a cleaner environment."
-        />
+  property="og:description"
+  content="M/s AA1 Scrap Center, an eco-friendly vehicle scrapping facility approved by the Uttar Pradesh Transport Department, offers de-registering, de-polluting, dismantling, and recycling services for end-of-life vehicles, conveniently located near NCR. Contact us at +91 98370 15844."
+/>
+
         <meta property="og:image" content="URL_TO_YOUR_IMAGE" />
         <meta property="og:url" content="https://www.aa1scrapcenter.com" />
         <SeoSript />
@@ -42,9 +45,9 @@ const Home = () => {
       <section className="bg-dark-blue text-white">
         <WhyChoose />
       </section>
-      <section>
+      {/* <section>
         <MediaCoverage />
-      </section>
+      </section> */}
       <section className="bg-dark-green text-white">
         <CallBack />
       </section>

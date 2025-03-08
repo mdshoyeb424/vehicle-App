@@ -28,7 +28,7 @@ const ContactForm = () => {
         for fast assistance.
       </h3>
       <div className="row animation" >
-        <div className="col-lg-3 d-flex flex-column">
+        <div className="col-xl-3 col-lg-4 d-flex flex-column">
           {contactDataDetails?.map((val, index) => (
             <div key={index} className="d-flex gap-3 my-2">
               <div className="p-2 rounded-1 bg-green mb-auto text-white">
@@ -41,12 +41,13 @@ const ContactForm = () => {
             </div>
           ))}
         </div>
-        <div className="col-lg-9" >
+        <div className="col-xl-9 col-lg-6" >
           <form action="" className="contact-form" onSubmit={handleSubmit}>
             <div className="row animation">
               <div className="col-md-6">
                 <input
                   name="name"
+                  className="con"
                   value={contactData?.name}
                   onChange={handleChange}
                   type="text"
@@ -59,6 +60,7 @@ const ContactForm = () => {
                   onChange={handleChange}
                   value={contactData?.email}
                   type="email"
+                    className="con"
                   placeholder="Your Email"
                 />
               </div>
@@ -66,8 +68,9 @@ const ContactForm = () => {
             <div>
               <input
                 type="tel"
-                name="phone"
-                value={contactData?.phone}
+                  className="con"
+                name="contact"
+                value={contactData?.contact}
                 onChange={handleChange}
                 required
                 placeholder="Contact Number"
@@ -76,6 +79,7 @@ const ContactForm = () => {
             <div>
               <textarea
                 name="message"
+                  className="con"
                 onChange={handleChange}
                 value={contactData?.message}
                 placeholder="Type your message(e.g., buying, selling, or other inquiries)"
@@ -128,6 +132,12 @@ const contactDataDetails = [
           className="text-light-green text-decoration-none fs-5"
         >
           {company.phone2}
+        </a>
+        <a
+          href={`tel:${company.phone3}`}
+          className="text-light-green text-decoration-none fs-5"
+        >
+          {company.phone3}
         </a>
       </>
     ),

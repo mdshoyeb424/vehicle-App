@@ -84,7 +84,7 @@ const GetBestPrice = () => {
 
 export default GetBestPrice;
 
-const col12=["address","vehichleName","name"];
+const col12=["address","nameOfVehicle","name"];
 
 const sellBuyForm = [
   {
@@ -108,9 +108,9 @@ const sellBuyForm = [
 
   {
     type: "input",
-    field: "vehichleName",
+    field: "nameOfVehicle",
     name: "Vehicle Name",
-    placeholder: "suzuki 800,Tata Winger",
+    placeholder: "Car Name ( e.g. WagonR, Santro, Beat etc)",
   },
   {
     type: "select",

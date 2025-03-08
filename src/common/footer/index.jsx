@@ -115,6 +115,12 @@ const footerData = [
               href={`tel:${company.phone2}`}
             >
              {company.phone2}
+            </a> <br />
+            <a
+              className="text-green text-decoration-none ms-5 ps-2"
+              href={`tel:${company.phone3}`}
+            >
+             {company.phone3}
             </a>{" "}
           </span>
         ),

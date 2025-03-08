@@ -7,7 +7,7 @@ const CallBack = () => {
     const { name, value } = e.target;
     setData({ ...data, [name]: value });
   };
-  const handeSumbit = () => {
+  const handeSumbit = (e) => {
     e.preventDefault();
     callBackService(data);
   };
@@ -26,14 +26,14 @@ const CallBack = () => {
                 </label>
                 <input
                   type="tel"
-                  name="phone"
+                  name="contact"
                   onChange={handleChange}
-                  placeholder="9723XXXXXX"
+                  placeholder="+91 9723XXXXXX"
                   className="bg-transparent w-100 border-0 outline-none fs-5"
                   style={{ outline: "none" }}
                 />
               </div>
-              <button className="btn-light-green col-sm-4 col-12 rounded-5">
+              <button type="submit" className="btn-light-green col-sm-4 col-12 rounded-5">
                 GET A CALL BACK
               </button>
             </div>

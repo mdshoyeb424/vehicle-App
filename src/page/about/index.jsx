@@ -12,11 +12,11 @@ const About = () => {
   const { pathname } = useLocation();
   return (
     <Layout>
-       <Helmet>
+      <Helmet>
         <title>About AA1 Scrap Center - Eco-friendly Vehicle Disposal</title>
         <meta
           name="description"
-          content="AA1 Scrap Center offers environmentally friendly vehicle scrapping services. We process end-of-life vehicles and support a cleaner environment."
+          content="AA1 Scrap Center offers environmentally friendly vehicle scrapping services. We process end-of-life vehicles and support a cleaner environment. Contact Us"
         />
         <meta
           name="keywords"
@@ -29,18 +29,19 @@ const About = () => {
         />
         <meta
           property="og:description"
-          content="AA1 Scrap Center offers environmentally friendly vehicle scrapping services. We process end-of-life vehicles and support a cleaner environment."
+          content="M/s AA1 Scrap Center, an eco-friendly vehicle scrapping facility approved by the Uttar Pradesh Transport Department, offers de-registering, de-polluting, dismantling, and recycling services for end-of-life vehicles, conveniently located near NCR. Contact us at +91 98370 15844."
         />
+
         <meta property="og:image" content="URL_TO_YOUR_IMAGE" />
         <meta property="og:url" content="https://www.aa1scrapcenter.com" />
         <SeoSript />
       </Helmet>
       <AboutHero data={hero} />
       <BackPath paths={pathname} />
-      <section  className="pb-0" >
+      <section className="pb-0">
         <AboutUs />
       </section>
-      <section  className="pt-0" >
+      <section className="pt-0">
         <FAQ />
       </section>
     </Layout>
